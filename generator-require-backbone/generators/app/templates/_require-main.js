@@ -1,13 +1,13 @@
 requirejs.config({
-  baseUrl: "../bower_components",
+  baseUrl: "js",
   paths: {
-    backbone: "backbone",    
-    jquery: "jquery/src/jquery",    
-    marionette: "backbone.marionette",        
-    text: "requirejs-text",
-    tpl: "underscore-tpl",
-    underscore: "underscore",
-    bootstrap: "bootstrap/dist/js/bootstrap"
+    backbone: "vendor/backbone/backbone",    
+    jquery: "vendor/jquery/dist/jquery",    
+    marionette: "vendor/backbone.marionette/lib/backbone.marionette",        
+    text: "vendor/requirejs-text/text",
+    tpl: "vendor/underscore-tpl/dist/underscore-tpl",
+    underscore: "vendor/underscore/underscore",
+    bootstrap: "vendor/bootstrap/dist/js/bootstrap"
   },
                           
   shim: {

@@ -24,8 +24,11 @@ var RequireBackboneMarionette = yeoman.generators.Base.extend({
   createFolders: function() {
     mkdirp('app');
     mkdirp('app/js');
+    mkdirp('app/js/vendor');
+    this.copy("_.bowerrc", ".bowerrc");
     this.copy("_bower.json", "bower.json");
     this.copy("_require-main.js", "app/js/require-main.js");
+    this.copy("_app.js", "app/js/app.js");
   },
   
   copyFiles: function() {
