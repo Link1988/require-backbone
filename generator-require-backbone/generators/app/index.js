@@ -28,8 +28,7 @@ var RequireBackboneMarionette = yeoman.generators.Base.extend({
     this.copy("_.bowerrc", ".bowerrc");
     this.copy("_bower.json", "bower.json");
     this.copy("_require-main.js", "app/js/require-main.js");
-    this.copy("_app.js", "app/js/app.js");
-    this.copy("_app.js", "app/js/app.js");
+    this.copy("_app.js", "app/js/app.js");    
   },
   
   copyFiles: function() {
