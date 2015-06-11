@@ -9,7 +9,8 @@
     "underscore-tpl" : "~0.3.3",
     "requirejs-text":"~2.0.14",
     "jquery": "~1.11.2",
-    "bootstrap": "~3.3.4" 
+    "bootstrap": "~3.3.4",
+    "lodash": "~3.9.3" 
   },
   "resolutions": {
     "underscore": "~1.6.0"
