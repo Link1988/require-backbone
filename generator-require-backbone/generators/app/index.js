@@ -30,8 +30,8 @@ var RequireBackboneMarionette = yeoman.generators.Base.extend({
         mkdirp('app/js/entities/models');
         mkdirp('app/js/modules');
         mkdirp('app/js/modules/main');
-        mkdirp('app/js/modules/templates');
-        mkdirp('app/js/modules/views');
+        mkdirp('app/js/modules/main/templates');
+        mkdirp('app/js/modules/main/views');
         this.copy("_.bowerrc", ".bowerrc");
         this.copy("_bower.json", "bower.json");
         this.copy("_require-main.js", "app/js/require-main.js");
