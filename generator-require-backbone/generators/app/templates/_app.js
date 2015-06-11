@@ -26,13 +26,9 @@ define([
                 Backbone.history.start();      
             }
             
+            App.headerRegion.show(new HeaderView);
+            App.footerRegion.show(new FooterView);
             App.navigate("home");
-            
-            var HeaderView = new HeaderView();     
-            var FooterView = new FooterView();
-            alert("Hola");
-            App.headerRegion.show(HeaderView);
-            App.footerRegion.show(FooterView);
         });
         
         return App;

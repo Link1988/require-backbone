@@ -32,14 +32,20 @@ var RequireBackboneMarionette = yeoman.generators.Base.extend({
         mkdirp('app/js/modules/main');
         mkdirp('app/js/modules/main/templates');
         mkdirp('app/js/modules/main/views');
+        mkdirp('app/css');
         this.copy("_.bowerrc", ".bowerrc");
         this.copy("_bower.json", "bower.json");
         this.copy("_require-main.js", "app/js/require-main.js");
         this.copy("_app.js", "app/js/app.js");
-        this.copy("_headerView.js", "app/js/modules/main/views/headerView.js");
-        this.copy("_footerView.js", "app/js/modules/main/views/footerView.js");
-        this.copy("_header.tpl", "app/js/modules/main/templates/header.tpl");
-        this.copy("_footer.tpl", "app/js/modules/main/templates/footer.tpl");    
+        this.copy("views/_headerView.js", "app/js/modules/main/views/headerView.js");
+        this.copy("views/_footerView.js", "app/js/modules/main/views/footerView.js");
+        this.copy("templates/_header.tpl", "app/js/modules/main/templates/header.tpl");
+        this.copy("templates/_footer.tpl", "app/js/modules/main/templates/footer.tpl");
+        this.copy("css/_styles.css", "app/css/styles.css");
+        this.copy("css/_bootstrap.css", "app/css/bootstrap.css");
+        this.copy("css/_bootstrap-theme.css", "app/css/bootstrap-theme.css");
+        this.copy("css/_bootstrap.css.map", "app/css/bootstrap.css.map");
+        this.copy("css/_bootstrap-theme.css.map", "app/css/bootstrap-theme.css.map");    
     },
   
     copyFiles: function() {

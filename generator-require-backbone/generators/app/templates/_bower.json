@@ -6,7 +6,7 @@
     "backbone.marionette": "~2.4.1",
     "requirejs": "~2.1.18",
     "underscore": "~1.6.0",
-    "underscore-tpl" : "~0.3.3",
+    "requirejs-tpl-jfparadis" : null ,
     "requirejs-text":"~2.0.14",
     "jquery": "~1.11.2",
     "bootstrap": "~3.3.4",

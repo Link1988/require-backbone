@@ -5,10 +5,10 @@ requirejs.config({
         jquery: "vendor/jquery/dist/jquery",    
         marionette: "vendor/backbone.marionette/lib/backbone.marionette",        
         text: "vendor/requirejs-text/text",
-        tpl: "vendor/underscore-tpl/dist/underscore-tpl",
+        tpl: "vendor/requirejs-tpl-jfparadis/tpl",
         underscore: "vendor/underscore/underscore",
         bootstrap: "vendor/bootstrap/dist/js/bootstrap",
-        lodash: "vendor/lodash/dist/lodash"
+        lodash: "vendor/lodash/lodash"
     },
     
     shim: {
@@ -16,7 +16,7 @@ requirejs.config({
             exports: "_"
         },
         backbone: {
-            deps: [ "lodash", "jquery", "underscore"],
+            deps: ["lodash", "jquery", "underscore"],
             exports: "Backbone"
         }, 
         "bootstrap": ["jquery"],    
@@ -24,7 +24,11 @@ requirejs.config({
             deps: ["backbone"],
             exports: "Marionette"
         },
-        tpl: ["text"]
+        tpl:["text"],
+    },
+   
+    tpl: {
+        extension: '.tpl' // default = '.html'
     }
 });
 
